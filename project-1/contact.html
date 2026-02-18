@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>L'Atelier Botanique - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+<a href="index.html">
+        <img src="images/logo_text.png" alt="Logo de L'Atelier Botanique">
+    </a>
+    </header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+
+        <li>
+            <a href="workshops.html">Nos Ateliers &#9662;</a>
+            <ul>
+                <li><a href="workshops.html#debutant">Niveau Débutant</a></li>
+                <li><a href="workshops.html#avance">Niveau Avancé</a></li>
+            </ul>
+        </li>
+        <li><a href="store.html">Boutique</a></li> <li><a href="gallery.html">Galerie</a></li>
+        <li><a href="news.html">Actualités</a></li> <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À Propos</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <h2>Envoyez-nous un message</h2>
+        <p>Une question sur un atelier ou une commande ? Remplissez le formulaire ci-dessous.</p>
+
+        <form action="https://hnitest.go.yj.fr" method="POST">
+            
+            <label for="lastname">Nom (Requis)</label>
+            <input class="myclass" id="lastname" type="text" name="lastname" required />
+
+            <label for="firstname">Prénom</label>
+            <input class="myclass" id="firstname" type="text" name="firstname" />
+
+            <label for="mail">Email </label>
+            <input class="myclass" id="mail" type="email" name="mail" placeholder="yourmail@gmail.com" required />
+
+            <label for="country">Pays</label>
+            <select class="myclass" name="country" id="country">
+                <option value="france">France</option>
+                <option value="belgique">Norvège</option>
+                <option value="suisse">Suisse</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <label for="request">Votre demande</label>
+            <textarea class="myclass" name="request" id="request" cols="66" rows="10"></textarea>
+
+            <button type="submit">Envoyer le message</button>
+        </form>
+    </main>
+
+    <footer>
+        <small>&copy; 2026 - HN Services | Tous droits réservés</small>
+    </footer>
+</div>
+
+</body>
+</html>
