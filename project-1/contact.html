@@ -46,33 +46,44 @@
             </div>
         </nav>
 
-        <main>
-            <h2>Envoyez-nous un message</h2>
+        <main class="p-4 p-md-5 flex-grow-1">
+            <h2 class="pb-2 mb-4 border-bottom border-success" style="color: #2c5e50;">Envoyez-nous un message</h2>
             <p>Une question sur un atelier ou une commande ? Remplissez le formulaire ci-dessous.</p>
 
-            <form action="https://hnitest.go.yj.fr" method="POST">
+            <form action="https://hnitest.go.yj.fr" method="POST" class="bg-light p-4 border rounded shadow-sm mt-4">
 
-                <label for="lastname">Nom (Requis)</label>
-                <input class="myclass" id="lastname" type="text" name="lastname" required />
+                <div class="mb-3">
+                    <label for="lastname" class="form-label fw-bold">Nom (Requis)</label>
+                    <input class="form-control" id="lastname" type="text" name="lastname" required />
+                </div>
 
-                <label for="firstname">Prénom</label>
-                <input class="myclass" id="firstname" type="text" name="firstname" />
+                <div class="mb-3">
+                    <label for="firstname" class="form-label fw-bold">Prénom</label>
+                    <input class="form-control" id="firstname" type="text" name="firstname" />
+                </div>
 
-                <label for="mail">Email </label>
-                <input class="myclass" id="mail" type="email" name="mail" placeholder="yourmail@gmail.com" required />
+                <div class="mb-3">
+                    <label for="mail" class="form-label fw-bold">Email</label>
+                    <input class="form-control" id="mail" type="email" name="mail" placeholder="yourmail@gmail.com"
+                        required />
+                </div>
 
-                <label for="country">Pays</label>
-                <select class="myclass" name="country" id="country">
-                    <option value="france">France</option>
-                    <option value="belgique">Norvège</option>
-                    <option value="suisse">Suisse</option>
-                    <option value="canada">Canada</option>
-                </select>
+                <div class="mb-3">
+                    <label for="country" class="form-label fw-bold">Pays</label>
+                    <select class="form-select" name="country" id="country">
+                        <option value="france">France</option>
+                        <option value="norvege">Norvège</option>
+                        <option value="suisse">Suisse</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </div>
 
-                <label for="request">Votre demande</label>
-                <textarea class="myclass" name="request" id="request" cols="66" rows="10"></textarea>
+                <div class="mb-3">
+                    <label for="request" class="form-label fw-bold">Votre demande</label>
+                    <textarea class="form-control" name="request" id="request" rows="6"></textarea>
+                </div>
 
-                <button type="submit">Envoyer le message</button>
+                <button type="submit" class="btn btn-success px-4 py-2 mt-2">Envoyer le message</button>
             </form>
         </main>
 
